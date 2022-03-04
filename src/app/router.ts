@@ -53,8 +53,10 @@ declare module 'vue-router' {
 }
 
 export enum CategorySlug {
-  Code = 'code',
-  Insight = 'insight'
+  //Code = 'code',
+  //Insight = 'insight'
+  Figure = 'figure',
+  Book = 'book'
 }
 
 export enum RouteName {

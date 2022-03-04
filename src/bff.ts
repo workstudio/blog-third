@@ -13,17 +13,17 @@ import { getSitemapXML } from './server/getters/sitemap'
 import { getGTagScript } from './server/getters/gtag'
 import { getAllWallpapers } from './server/getters/wallpaper'
 import { getGitHubRepositories, getGitHubContributions } from './server/getters/github'
-import {
+/*import {
   getTwitterTweets,
   getTwitterUserinfo,
   getTwitterCalendar,
   initTwitterCalendar
-} from './server/getters/twitter'
-import {
+} from './server/getters/twitter'*/
+/*import {
   getInstagramMedias,
   getInstagramCalendar,
   initInstagramCalendar
-} from './server/getters/instagram'
+} from './server/getters/instagram'*/
 import {
   getYouTubeChannelPlayLists,
   getYouTubeVideoListByPlayerlistID
@@ -44,8 +44,8 @@ createExpressApp().then(({ app, server, cache }) => {
   // static
   app.use(express.static(PUBLIC_PATH))
   // init thirds task
-  initTwitterCalendar()
-  initInstagramCalendar()
+  //initTwitterCalendar()
+  //initInstagramCalendar()
 
   // sitemap
   app.get('/sitemap.xml', async (_, response) => {
@@ -159,7 +159,7 @@ createExpressApp().then(({ app, server, cache }) => {
   )
 
   // Twitter userinfo
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.TwitterUserInfo}`,
     responsor(() => {
       return cacher({
@@ -170,10 +170,10 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getTwitterUserinfo
       })
     })
-  )
+  )*/
 
   // Twitter newest tweets
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.TwitterTweets}`,
     responsor(() => {
       return cacher({
@@ -184,16 +184,16 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getTwitterTweets
       })
     })
-  )
+  )*/
 
   // Twitter tweets calendar
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.TwitterCalendar}`,
     responsor(() => getTwitterCalendar())
-  )
+  )*/
 
   // Instagram newest medias
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.InstagramMedias}`,
     responsor(() => {
       return cacher({
@@ -204,13 +204,13 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getInstagramMedias
       })
     })
-  )
+  )*/
 
   // Instagram calendar
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.InstagramCalendar}`,
     responsor(() => getInstagramCalendar())
-  )
+  )*/
 
   // YouTube platlists
   app.get(

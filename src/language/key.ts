@@ -8,6 +8,8 @@ export enum LanguageKey {
   APP_SLOGAN = 'app-slogan',
   CATEGORY_INSIGHT = 'insight',
   CATEGORY_CODE = 'code',
+  CATEGORY_BOOK = 'book',
+  CATEGORY_FIGURE = 'figure',
   PAGE_HOME = 'home',
   PAGE_GITHUB = 'github',
   PAGE_LENS = 'lens',

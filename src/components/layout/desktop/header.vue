@@ -86,6 +86,7 @@
     setup() {
       const { i18n, gtag, theme, globalState } = useEnhancer()
       // 非常规布局则启用菜单
+      //const isEnabledNav = true
       const isEnabledNav = computed(() => !globalState.layoutColumn.value.isNormal)
 
       const themeValue = theme.theme

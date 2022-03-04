@@ -22,24 +22,24 @@ export const menus: Array<MenuItem> = [
     i18nKey: LanguageKey.PAGE_HOME
   },
   {
-    id: CategorySlug.Code,
-    route: getCategoryFlowRoute(CategorySlug.Code),
+    id: CategorySlug.Book,
+    route: getCategoryFlowRoute(CategorySlug.Book),
     icon: 'icon-code',
-    i18nKey: LanguageKey.CATEGORY_CODE
+    i18nKey: LanguageKey.CATEGORY_BOOK
   },
   {
-    id: CategorySlug.Insight,
-    route: getCategoryFlowRoute(CategorySlug.Insight),
+    id: CategorySlug.Figure,
+    route: getCategoryFlowRoute(CategorySlug.Figure),
     icon: 'icon-thinking',
-    i18nKey: LanguageKey.CATEGORY_INSIGHT
+    i18nKey: LanguageKey.CATEGORY_FIGURE
   },
-  {
+  /*{
     id: 'github',
     url: VALUABLE_LINKS.GITHUB,
     icon: 'icon-github',
     newWindow: true,
     i18nKey: LanguageKey.PAGE_GITHUB
-  },
+  },*/
   {
     id: RouteName.Lens,
     route: getPageRoute(RouteName.Lens),
@@ -60,12 +60,12 @@ export const menus: Array<MenuItem> = [
     i18nKey: LanguageKey.PAGE_JOB
   },
   */
-  {
+  /*{
     id: RouteName.Freelancer,
     route: getPageRoute(RouteName.Freelancer),
     icon: 'icon-coin-s',
     i18nKey: LanguageKey.PAGE_FREELANCER
-  },
+  },*/
   {
     id: RouteName.Guestbook,
     route: getPageRoute(RouteName.Guestbook),

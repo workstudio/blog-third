@@ -25,11 +25,11 @@
           <i class="iconfont icon-home-fill"></i>
           <i18n :k="LanguageKey.PAGE_HOME" />
         </router-link>
-        <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Code)">
+        <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Book)">
           <i class="iconfont icon-code"></i>
           <i18n :k="LanguageKey.CATEGORY_CODE" />
         </router-link>
-        <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Insight)">
+        <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Figure)">
           <i class="iconfont icon-thinking"></i>
           <i18n :k="LanguageKey.CATEGORY_INSIGHT" />
         </router-link>

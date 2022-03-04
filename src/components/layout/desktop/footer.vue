@@ -3,7 +3,21 @@
     <div class="container">
       <a class="sitemap-btn" target="_blank" :href="VALUABLE_LINKS.SITE_MAP">sitemap.xml</a>
       <divider type="vertical" />
-      <i18n zh="由 " en="Powered By " />
+
+      <i18n>
+        <template #zh>
+          <router-link :to="aboutPageUrl" key="zh">木木书屋</router-link>
+        </template>
+      </i18n>
+      <divider type="vertical" />
+      <i18n>
+        <template #zh>
+          <span><a href="https://beian.miit.gov.cn" target="_blank">京ICP备13015487号-5</a></span>
+        </template>
+      </i18n>
+
+
+      <!--<i18n zh="由 " en="Powered By " />
       <ulink class="item" :href="VALUABLE_LINKS.GITHUB_BLOG_STAR_LIST">NodePress</ulink>
       <i18n zh="、" en=", " />
       <ulink class="item" :href="VALUABLE_LINKS.GITHUB_SURMON_ME">Vue</ulink>
@@ -18,7 +32,7 @@
           <span>Designed By </span>
           <router-link :to="aboutPageUrl" key="en">Me</router-link>
         </template>
-      </i18n>
+      </i18n>-->
     </div>
   </footer>
 </template>
