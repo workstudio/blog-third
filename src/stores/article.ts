@@ -17,7 +17,7 @@ import { Tag } from './tag'
 import { isClient } from '/@/app/environment'
 import nodepress from '/@/services/nodepress'
 
-export const ARTICLE_API_PATH = '/article'
+export const ARTICLE_API_PATH = '/blog/article'
 
 export interface Article {
   id: number

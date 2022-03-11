@@ -2,7 +2,7 @@
   <header :id="HEADER_ELEMENT_ID" class="header" :class="{ 'enable-nav': isEnabledNav }">
     <div class="header-container container">
       <div class="header-header">
-        <uimage cdn src="/images/logo.svg" class="header-logo" />
+        <!--<uimage cdn src="/images/logo.svg" class="header-logo" />-->
         <span class="header-slogan">
           <i18n :k="LanguageKey.APP_SLOGAN" />
         </span>
@@ -86,8 +86,8 @@
     setup() {
       const { i18n, gtag, theme, globalState } = useEnhancer()
       // 非常规布局则启用菜单
-      //const isEnabledNav = true
-      const isEnabledNav = computed(() => !globalState.layoutColumn.value.isNormal)
+      const isEnabledNav = true
+      //const isEnabledNav = computed(() => !globalState.layoutColumn.value.isNormal)
 
       const themeValue = theme.theme
       const themeIcon = computed(() => {

@@ -56,7 +56,8 @@ export enum CategorySlug {
   //Code = 'code',
   //Insight = 'insight'
   Figure = 'figure',
-  Book = 'book'
+  Book = 'book',
+  Diagram = 'diagram',
 }
 
 export enum RouteName {

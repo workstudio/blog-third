@@ -32,6 +32,7 @@ nodepress.interceptors.response.use(
         return Promise.reject(response.data)
       }
     }
+      console.log('rrrrrrrrrrrrrrr', response.config.url)
 
     return response.data
   },
@@ -43,6 +44,7 @@ nodepress.interceptors.response.use(
       code: errorJSON.status || error.response?.status || BAD_REQUEST,
       message: error.response?.data?.error || error.response?.statusText || errorJSON.message
     }
+      console.log('sssssssssssssssssssss', errorInfo)
 
     console.debug(
       'axios error:',

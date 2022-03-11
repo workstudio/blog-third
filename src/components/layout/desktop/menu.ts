@@ -33,18 +33,11 @@ export const menus: Array<MenuItem> = [
     icon: 'icon-thinking',
     i18nKey: LanguageKey.CATEGORY_FIGURE
   },
-  /*{
-    id: 'github',
-    url: VALUABLE_LINKS.GITHUB,
-    icon: 'icon-github',
-    newWindow: true,
-    i18nKey: LanguageKey.PAGE_GITHUB
-  },*/
   {
-    id: RouteName.Lens,
-    route: getPageRoute(RouteName.Lens),
+    id: RouteName.diagram,
+    route: getCategoryFlowRoute(CategorySlug.Diagram),
     icon: 'icon-lens',
-    i18nKey: LanguageKey.PAGE_LENS
+    i18nKey: LanguageKey.CATEGORY_DIAGRAM
   },
   {
     id: RouteName.About,
@@ -52,6 +45,41 @@ export const menus: Array<MenuItem> = [
     icon: 'icon-swordsman',
     i18nKey: LanguageKey.PAGE_ABOUT
   },
+  {
+    id: RouteName.Merch,
+    route: getPageRoute(RouteName.Merch),
+    divider: true,
+    hot: true,
+    icon: 'icon-rubik',
+    i18nKey: LanguageKey.PAGE_MERCH
+  },
+  {
+    id: 'graphic',
+    url: VALUABLE_LINKS.GRAPHIC,
+    icon: 'icon-like',
+    newWindow: true,
+    i18nKey: LanguageKey.PAGE_GRAPHIC
+  },
+  {
+    id: 'book-reader',
+    url: VALUABLE_LINKS.BOOK_READER,
+    icon: 'icon-like',
+    newWindow: true,
+    i18nKey: LanguageKey.PAGE_BOOK_READER
+  },
+  /*{
+    id: 'github',
+    url: VALUABLE_LINKS.GITHUB,
+    icon: 'icon-github',
+    newWindow: true,
+    i18nKey: LanguageKey.PAGE_GITHUB
+  },*/
+  /*{
+    id: RouteName.Lens,
+    route: getPageRoute(RouteName.Lens),
+    icon: 'icon-lens',
+    i18nKey: LanguageKey.PAGE_LENS
+  },*/
   /*
   {
     id: RouteName.Job,
@@ -66,25 +94,17 @@ export const menus: Array<MenuItem> = [
     icon: 'icon-coin-s',
     i18nKey: LanguageKey.PAGE_FREELANCER
   },*/
-  {
+  /*{
     id: RouteName.Guestbook,
     route: getPageRoute(RouteName.Guestbook),
     icon: 'icon-comment',
     i18nKey: LanguageKey.PAGE_GUESTBOOK
-  },
-  {
+  },*/
+  /*{
     id: RouteName.App,
     route: getPageRoute(RouteName.App),
     divider: true,
     icon: 'icon-app',
     i18nKey: LanguageKey.PAGE_APP
-  },
-  {
-    id: RouteName.Merch,
-    route: getPageRoute(RouteName.Merch),
-    divider: true,
-    hot: true,
-    icon: 'icon-rubik',
-    i18nKey: LanguageKey.PAGE_MERCH
-  }
+  },*/
 ]

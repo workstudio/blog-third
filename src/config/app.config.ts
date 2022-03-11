@@ -52,6 +52,8 @@ export const THIRD_IDS = Object.freeze({
 })
 
 export const VALUABLE_LINKS = Object.freeze({
+  BOOK_READER: 'http://book.canliang.wang',
+  GRAPHIC: 'http://culture.91zuiai.com/graphic',
   RSS: '/rss.xml',
   SITE_MAP: '/sitemap.xml',
   SPONSOR: '/sponsor',

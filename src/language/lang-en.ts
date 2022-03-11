@@ -6,6 +6,12 @@ export const enLangMap: LanguageMap = {
   [LanguageKey.APP_SLOGAN]: META.en_sub_title,
   [LanguageKey.CATEGORY_INSIGHT]: 'Insight',
   [LanguageKey.CATEGORY_CODE]: 'Code',
+  [LanguageKey.CATEGORY_BOOK]: 'Book',
+  [LanguageKey.CATEGORY_DIAGRAM]: 'Diagram',
+  [LanguageKey.CATEGORY_FIGURE]: 'Figure',
+  [LanguageKey.PAGE_GRAPHIC]: 'Graphic',
+  [LanguageKey.PAGE_BOOK_READER]: 'BookReader',
+
   [LanguageKey.PAGE_HOME]: 'Home',
   [LanguageKey.PAGE_GITHUB]: 'GitHub',
   [LanguageKey.PAGE_ARCHIVE]: 'Archive',
