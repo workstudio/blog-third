@@ -24,7 +24,7 @@ export const useArticleCalendarStore = defineStore('articleCalendar', {
 
       this.fetching = true
       return nodepress
-        .get('/article/calendar', {
+        .get('/blog/article/calendar', {
           params: { timezone: Intl.DateTimeFormat().resolvedOptions().timeZone }
         })
         .then((response) => {

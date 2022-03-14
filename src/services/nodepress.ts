@@ -27,8 +27,9 @@ const nodepress = axios.create({
 
 nodepress.interceptors.response.use(
   (response) => {
+      console.log(response, 'rrrrrraaaaaaaa');
     if (response.headers['content-type'].includes('json')) {
-      if (response.data.status !== HTTPStatus.Success) {
+      if (response.data.status !== HTTPStatus.Success && response.data.code !== 200) {
         return Promise.reject(response.data)
       }
     }
