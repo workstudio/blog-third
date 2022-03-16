@@ -27,13 +27,11 @@ const nodepress = axios.create({
 
 nodepress.interceptors.response.use(
   (response) => {
-      console.log(response, 'rrrrrraaaaaaaa');
     if (response.headers['content-type'].includes('json')) {
       if (response.data.status !== HTTPStatus.Success && response.data.code !== 200) {
         return Promise.reject(response.data)
       }
     }
-      console.log('rrrrrrrrrrrrrrr', response.config.url)
 
     return response.data
   },
@@ -45,7 +43,6 @@ nodepress.interceptors.response.use(
       code: errorJSON.status || error.response?.status || BAD_REQUEST,
       message: error.response?.data?.error || error.response?.statusText || errorJSON.message
     }
-      console.log('sssssssssssssssssssss', errorInfo)
 
     console.debug(
       'axios error:',

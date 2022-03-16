@@ -70,7 +70,7 @@ export const useTagStore = defineStore('tag', {
 
       this.fetching = true
       return nodepress
-        .get('/tag/all')
+        .get('/blog/tag/hottest')
         .then((response) => {
           //this.tags = response.result
           this.tags = response.result.data
