@@ -120,7 +120,7 @@ export const useMetaStore = defineStore('meta', {
 
       this.appOptions.fetching = true
       return nodepress
-        .get('/option')
+        .get('/blog/option')
         .then((response) => {
           this.appOptions.data = response.result
         })

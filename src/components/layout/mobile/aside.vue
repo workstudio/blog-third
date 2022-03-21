@@ -27,6 +27,40 @@
         </router-link>
         <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Book)">
           <i class="iconfont icon-code"></i>
+          <i18n :k="LanguageKey.CATEGORY_BOOK" />
+        </router-link>
+        <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Figure)">
+          <i class="iconfont icon-thinking"></i>
+          <i18n :k="LanguageKey.CATEGORY_FIGURE" />
+        </router-link>
+        <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Diagram)">
+          <i class="iconfont icon-thinking"></i>
+          <i18n :k="LanguageKey.CATEGORY_DIAGRAM" />
+        </router-link>
+        <router-link class="item" :to="getPageRoute(RouteName.About)">
+          <i class="iconfont icon-swordsman"></i>
+          <i18n :k="LanguageKey.PAGE_ABOUT" />
+        </router-link>
+        <router-link class="item" :to="getPageRoute(RouteName.Archive)">
+          <i class="iconfont icon-peachblossom"></i>
+          <i18n :k="LanguageKey.PAGE_ARCHIVE" />
+        </router-link>
+        <ulink class="item" :href="VALUABLE_LINKS.GRAPHIC">
+          <i class="iconfont icon-like"></i>
+          <i18n :k="LanguageKey.PAGE_GRAPHIC" />
+          <span class="newscript">
+            <i class="iconfont icon-new-window-s"></i>
+          </span>
+        </ulink>
+        <ulink class="item" :href="VALUABLE_LINKS.BOOK_READER">
+          <i class="iconfont icon-like"></i>
+          <i18n :k="LanguageKey.PAGE_BOOK_READER" />
+          <span class="newscript">
+            <i class="iconfont icon-new-window-s"></i>
+          </span>
+        </ulink>
+        <!--<router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Book)">
+          <i class="iconfont icon-code"></i>
           <i18n :k="LanguageKey.CATEGORY_CODE" />
         </router-link>
         <router-link class="item" :to="getCategoryFlowRoute(CategorySlug.Figure)">
@@ -44,10 +78,6 @@
           <i class="iconfont icon-peachblossom"></i>
           <i18n :k="LanguageKey.PAGE_ARCHIVE" />
         </router-link>
-        <router-link class="item" :to="getPageRoute(RouteName.About)">
-          <i class="iconfont icon-swordsman"></i>
-          <i18n :k="LanguageKey.PAGE_ABOUT" />
-        </router-link>
         <router-link class="item guestbook" :to="getPageRoute(RouteName.Guestbook)">
           <i class="iconfont icon-comment"></i>
           <i18n :k="LanguageKey.PAGE_GUESTBOOK" />
@@ -55,7 +85,7 @@
         <router-link class="item app" :to="getPageRoute(RouteName.App)">
           <i class="iconfont icon-app"></i>
           <i18n :k="LanguageKey.PAGE_APP" />
-        </router-link>
+        </router-link>-->
       </nav>
     </div>
   </aside>

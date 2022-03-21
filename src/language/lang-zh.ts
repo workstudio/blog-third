@@ -13,7 +13,7 @@ export const zhLangMap: LanguageMap = {
   [LanguageKey.PAGE_GRAPHIC]: '图表/图说',
   [LanguageKey.PAGE_HOME]: '首页',
   [LanguageKey.PAGE_GITHUB]: '丹青阁',
-  [LanguageKey.PAGE_ARCHIVE]: '万象殿',
+  [LanguageKey.PAGE_ARCHIVE]: '过往',
   [LanguageKey.PAGE_ABOUT]: '关于我们',
   [LanguageKey.PAGE_GUESTBOOK]: '留言板',
   [LanguageKey.PAGE_APP]: '客户端',
