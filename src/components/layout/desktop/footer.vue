@@ -12,7 +12,7 @@
       <divider type="vertical" />
       <i18n>
         <template #zh>
-          <span><a href="https://beian.miit.gov.cn" target="_blank">京ICP备13015487号-5</a></span>
+          <span><a href="https://beian.miit.gov.cn" target="_blank">京ICP备13015487号-1</a></span>
         </template>
       </i18n>
 
