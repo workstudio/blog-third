@@ -17,7 +17,8 @@ import { Category } from './category'
 import { Tag } from './tag'
 import nodepress from '/@/services/nodepress'
 
-export const ARTICLE_API_PATH = '/article'
+//export const ARTICLE_API_PATH = '/article'
+export const ARTICLE_API_PATH = '/blog/article'
 
 export interface Article {
   id: number

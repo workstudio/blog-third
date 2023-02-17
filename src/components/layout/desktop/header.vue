@@ -2,7 +2,7 @@
   <header :id="HEADER_ELEMENT_ID" class="header" :class="{ 'enable-nav': isEnabledNav }">
     <div class="header-container container">
       <div class="header-header">
-        <uimage cdn src="/images/logo.svg" class="header-logo" :alt="META.title" />
+        <!--<uimage cdn src="/images/logo.svg" class="header-logo" :alt="META.title" />-->
         <webfont class="header-slogan">
           <i18n :k="LanguageKey.APP_SLOGAN" />
         </webfont>
@@ -63,7 +63,8 @@
     setup() {
       const { i18n, gtag, theme, globalState } = useEnhancer()
       // enable header nav bar when full page layout
-      const isEnabledNav = computed(() => !globalState.layoutColumn.value.isNormal)
+      //const isEnabledNav = computed(() => !globalState.layoutColumn.value.isNormal)
+      const isEnabledNav = true
 
       const themeValue = theme.theme
       const themeIcon = computed(() => {

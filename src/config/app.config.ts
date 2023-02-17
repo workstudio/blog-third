@@ -8,15 +8,16 @@ export const DEFAULT_DELAY = 468
 export const LONG_ARTICLE_THRESHOLD = 16688
 
 export const META = Object.freeze({
-  title: 'Surmon.me',
-  zh_sub_title: '来苏之望',
-  en_sub_title: 'Come into the wild',
-  zh_biography: '本是浪蝶游蜂，自留半亩石池，但求直抒胸臆，挥墨九云之中',
-  en_biography: 'Either write something worth reading or do something worth writing.',
-  url: 'https://surmon.me',
-  domain: 'surmon.me',
-  author: 'Surmon',
+  title: '日拱一卒',
+  zh_sub_title: '跬步千里，小流江海',
+  en_sub_title: 'Step by step, small rivers and seas',
+  zh_biography: '图难于其易，为大于其细；天下难事，必作于易；天下大事，必作于细。',
+  en_biography: 'The picture is more difficult than easy, and it is more detailed; If the world is difficult, it must be done easily; Great things in the world must be done in detail.',
+  url: 'https://blog.91zuiai.com',
+  domain: '91zuiai.com',
+  author: 'muxiulin',
   primary: '#0088f5'
+
 })
 
 export const GEO_INFO = Object.freeze({
@@ -50,6 +51,8 @@ export const IDENTITIES = Object.freeze({
 })
 
 export const VALUABLE_LINKS = Object.freeze({
+  BOOK_READER: 'http://book.canliang.wang',
+  GRAPHIC: 'http://culture.91zuiai.com/graphic',
   RSS: '/rss.xml',
   SITE_MAP: '/sitemap.xml',
   UPTIME_STATUS: 'https://stats.uptimerobot.com/Q2k7OTXxJN',

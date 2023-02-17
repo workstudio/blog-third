@@ -4,13 +4,22 @@ import { META } from '/@/config/app.config'
 
 export const zhLangMap: LanguageMap = {
   [LanguageKey.APP_SLOGAN]: META.zh_sub_title,
-  [LanguageKey.PAGE_HOME]: '明殿',
+
+  [LanguageKey.CATEGORY_BOOK]: '书籍/感悟',
+  [LanguageKey.CATEGORY_FIGURE]: '大人物',
+  [LanguageKey.CATEGORY_DIAGRAM]: '图片的故事',
+  [LanguageKey.PAGE_BOOK_READER]: '阅读',
+  [LanguageKey.PAGE_GRAPHIC]: '图表/图说',
+  [LanguageKey.PAGE_HOME]: '首页',
+
   [LanguageKey.CATEGORY_INSIGHT]: '无色庵',
   [LanguageKey.CATEGORY_CODE]: '宁静寺',
   [LanguageKey.PAGE_GITHUB]: '丹青阁',
-  [LanguageKey.PAGE_ARCHIVE]: '万象殿',
-  [LanguageKey.PAGE_GUESTBOOK]: '四方馆',
-  [LanguageKey.PAGE_ABOUT]: '狂浪生',
+
+  [LanguageKey.PAGE_ARCHIVE]: '过往',
+  [LanguageKey.PAGE_ABOUT]: '关于我们',
+  [LanguageKey.PAGE_GUESTBOOK]: '留言板',
+
   [LanguageKey.PAGE_SPONSOR]: '赞助',
   [LanguageKey.PAGE_APP]: '客户端',
   [LanguageKey.PAGE_LENS]: '茫涯',

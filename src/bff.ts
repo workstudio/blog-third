@@ -14,21 +14,21 @@ import { getGTagScript } from './server/getters/gtag'
 import { getAllWallpapers } from './server/getters/wallpaper'
 import { getMyGoogleMap } from './server/getters/my-google-map'
 import { getGitHubSponsors, getGitHubContributions } from './server/getters/github'
-import {
+/*import {
   getTwitterTweets,
   getTwitterUserinfo,
   getTwitterCalendar,
   initTwitterCalendar
-} from './server/getters/twitter'
-import {
+} from './server/getters/twitter'*/
+/*import {
   getInstagramMedias,
   getInstagramCalendar,
   initInstagramCalendar
-} from './server/getters/instagram'
-import {
+} from './server/getters/instagram'*/
+/*import {
   getYouTubeChannelPlayLists,
   getYouTubeVideoListByPlayerlistID
-} from './server/getters/youtube'
+} from './server/getters/youtube'*/
 import { getGitHubStatistic, getNPMStatistic } from './server/getters/open-srouce'
 import { getOpenSeaAssets, getOpenSeaCollections } from './server/getters/opensea'
 import { getDoubanMovies } from './server/getters/douban'
@@ -238,7 +238,7 @@ createExpressApp().then(({ app, server, cache }) => {
   )
 
   // Twitter userinfo
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.TwitterUserInfo}`,
     responsor(() => {
       return cacher({
@@ -249,10 +249,10 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getTwitterUserinfo
       })
     })
-  )
+  )*/
 
   // Twitter newest tweets
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.TwitterTweets}`,
     responsor(() => {
       return cacher({
@@ -263,16 +263,16 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getTwitterTweets
       })
     })
-  )
+  )*/
 
   // Twitter tweets calendar
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.TwitterCalendar}`,
     responsor(() => getTwitterCalendar())
-  )
+  )*/
 
   // Instagram newest medias
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.InstagramMedias}`,
     responsor(() => {
       return cacher({
@@ -283,16 +283,16 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getInstagramMedias
       })
     })
-  )
+  )*/
 
   // Instagram calendar
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.InstagramCalendar}`,
     responsor(() => getInstagramCalendar())
-  )
+  )*/
 
   // YouTube platlists
-  app.get(
+  /*app.get(
     `${BFF_TUNNEL_PREFIX}/${TunnelModule.YouTubePlaylist}`,
     responsor(() => {
       return cacher({
@@ -303,10 +303,10 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: getYouTubeChannelPlayLists
       })
     })
-  )
+  )*/
 
   // YouTube videos
-  app.get(`${BFF_TUNNEL_PREFIX}/${TunnelModule.YouTubeVideoList}`, (request, response, next) => {
+  /*app.get(`${BFF_TUNNEL_PREFIX}/${TunnelModule.YouTubeVideoList}`, (request, response, next) => {
     const playlistID = request.query.id
     if (!playlistID || typeof playlistID !== 'string') {
       return erroror(response, 'Invalid params')
@@ -320,7 +320,7 @@ createExpressApp().then(({ app, server, cache }) => {
         getter: () => getYouTubeVideoListByPlayerlistID(playlistID)
       })
     })(request, response, next)
-  })
+  })*/
 
   // OpenSea assets
   app.get(

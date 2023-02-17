@@ -2,7 +2,20 @@
   <container tag="footer" :id="FOOTER_ELEMENT_ID" class="footer">
     <ulink class="sitemap-btn" :href="VALUABLE_LINKS.SITE_MAP">sitemap.xml</ulink>
     <divider type="vertical" />
-    <i18n zh="由 " en="Powered By " />
+
+      <i18n>
+        <template #zh>
+          <router-link :to="aboutPageUrl" key="zh">木木书屋</router-link>
+        </template>
+      </i18n>
+      <divider type="vertical" />
+      <i18n>
+        <template #zh>
+          <span><a href="https://beian.miit.gov.cn" target="_blank">京ICP备13015487号-1</a></span>
+        </template>
+      </i18n>
+
+    <!--<i18n zh="由 " en="Powered By " />
     <ulink class="item" :href="VALUABLE_LINKS.GITHUB_BLOG_STAR_LIST">NodePress</ulink>
     <i18n zh="、" en=", " />
     <ulink class="item" :href="VALUABLE_LINKS.GITHUB_SURMON_ME">Vue</ulink>
@@ -14,7 +27,7 @@
     <divider type="vertical" />
     <ulink :href="VALUABLE_LINKS.UPTIME_STATUS">
       <i18n zh="实态" en="STATUS" />
-    </ulink>
+    </ulink>-->
   </container>
 </template>
 

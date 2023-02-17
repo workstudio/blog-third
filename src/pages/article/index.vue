@@ -57,9 +57,9 @@
         </div>
       </template>
     </placeholder>
-    <div class="comment">
+    <!--<div class="comment">
       <comment :plain="isMobile" :fetching="fetching" :post-id="articleId" />
-    </div>
+    </div>-->
   </div>
 </template>
 
