@@ -82,7 +82,7 @@ export enum LanguageKey {
   MOMENT_DAYS = 'moment-days',
   MOMENT_MONTHS = 'moment-months',
   MOMENT_YEAR = 'moment-year',
-  MOMENT_AGO = 'moment-ago'
+  MOMENT_AGO = 'moment-ago',
 
   CATEGORY_BOOK = 'book',
   CATEGORY_FIGURE = 'figure',

@@ -49,8 +49,8 @@ createExpressApp().then(({ app, server, cache }) => {
   // static
   app.use(express.static(PUBLIC_PATH))
   // init thirds task
-  initTwitterCalendar()
-  initInstagramCalendar()
+  //initTwitterCalendar()
+  //initInstagramCalendar()
 
   // sitemap
   app.get('/sitemap.xml', async (_, response) => {

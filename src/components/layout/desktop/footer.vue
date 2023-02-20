@@ -37,6 +37,8 @@
   import { GAEventCategories } from '/@/constants/gtag'
   import { FOOTER_ELEMENT_ID } from '/@/constants/anchor'
   import { VALUABLE_LINKS } from '/@/config/app.config'
+  import { RouteName } from '/@/app/router'
+  import { getPageRoute, getCategoryFlowRoute } from '/@/transforms/route'
 
   export default defineComponent({
     name: 'DesktopFooter',
@@ -52,6 +54,7 @@
       return {
         FOOTER_ELEMENT_ID,
         VALUABLE_LINKS,
+        aboutPageUrl: getPageRoute(RouteName.About),
         handleStatementModal
       }
     }
